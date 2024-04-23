@@ -24,6 +24,17 @@ jobs:
         with:
           poetry-version: 1.2.0
 
+      - name: Lock dependencies without update
+        run: poetry lock --no-update
+
+      - name: Commit updated lock file
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add poetry.lock
+          git commit -m "Update poetry.lock file"
+          git push
+        
       - name: install dependencies
         run: poetry install
 
