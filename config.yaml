@@ -3,9 +3,10 @@ subject: ' cat:cs.AI'
 
 # 検索キーワード
 keywords:
-        kaggle: 3
-        resnet: 3
-        anomaly detection: 1
+        Large Language Model: 3
+        context: 3
+        embedding: 3
+        ML: 1
 
 # 通知の閾値
 score_threshold: 0
